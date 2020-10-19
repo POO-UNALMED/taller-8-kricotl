@@ -28,20 +28,10 @@ abstract public class Futbolista implements Comparable<Object>{
 		return posicion;
 	}
 	public boolean equals(Futbolista f) {
-		int x=this.compareTo(f);
-		if(x==0) {
-			return true;
+		return this==f;
 		}
-		else {
-			return false;
-		}
-	}
 	public String toString(){
 		return "El futbolista "+this.nombre+" tiene "+this.edad+", y juega de " + this.posicion;
 	}
 	public abstract boolean jugarConLasManos();
-	public int compareTo(Futbolista o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 	}
