@@ -36,10 +36,10 @@ abstract public class Futbolista implements Comparable<Object>{
 			return false;
 		}
 	}
-	public abstract boolean jugarConLasManos();
-	public String toString() {
-		return "El futbolista "+nombre+"tiene "+edad+", y juega de "+posicion;
+	public String toString(){
+		return "El futbolista "+this.nombre+" tiene "+this.edad+", y juega de" + this.posicion;
 	}
+	public abstract boolean jugarConLasManos();
 	public int compareTo(Futbolista o) {
 		// TODO Auto-generated method stub
 		return 0;
