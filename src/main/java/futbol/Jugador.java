@@ -13,7 +13,7 @@ public class Jugador extends Futbolista {
 		this.dorsal=7;
 	}
 	public int compareTo(Object o) {
-		return this.getEdad()-(((Jugador)o).getEdad());
+		return Math.abs(this.getEdad()-(((Jugador)o).getEdad()));
 	}
 	public String toString() {
 		return "El futbolista "+this.getNombre()+" tiene "+this.getEdad()+", y juega de "
