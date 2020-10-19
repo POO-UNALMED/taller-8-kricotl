@@ -12,8 +12,8 @@ public class Jugador extends Futbolista {
 		this.golesMarcados=289;
 		this.dorsal=7;
 	}
-	public int compareTo(Jugador o) {
-		return this.getEdad()-o.getEdad();
+	public int compareTo(Object o) {
+		return this.getEdad()-(((Jugador)o).getEdad());
 	}
 	public String toString() {
 		return "El futbolista "+this.getNombre()+" tiene "+this.getEdad()+", y juega de "
@@ -34,10 +34,5 @@ public class Jugador extends Futbolista {
 	@Override
 	public boolean jugarConLasManos() {
 		return false;
-	}
-	@Override
-	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 }
